@@ -1,9 +1,11 @@
 import React from "react";
 import './IntroPage.css';
+import movingArrow from "../arrowDown.json"
+import Lottie from "lottie-react";
 function IntroPage(){
 
     return(
-        <div>
+        <div className="ContentWrapper">
            <div className="Img">
                 <img  className="CircularPranavFace" src="circlePranavFace.png"/>
            </div>
@@ -14,6 +16,7 @@ function IntroPage(){
            <div className="DiscoverMoreBtn">
                 <button className="DiscoverMoreButton">Discover More!</button>
            </div>
+           <Lottie animationData = {movingArrow}/>
           
         </div>
     )
