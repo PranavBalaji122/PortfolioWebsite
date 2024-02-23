@@ -4,6 +4,7 @@ import Navbar from './navbar';
 import Education from './Education';
 
 function App() {
+  //Hello I am a bozo
   const education = useRef(null);
 
   const scrollToSection = () => {
