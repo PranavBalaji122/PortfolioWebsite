@@ -1,6 +1,6 @@
 import React from "react";
 import './IntroPage.css';
-import movingArrow from "../arrowDown.json"
+import movingArrow from "./arrowDown.json"
 import Lottie from "lottie-react";
 function IntroPage(){
 
@@ -16,8 +16,7 @@ function IntroPage(){
            <div className="DiscoverMoreBtn">
                 <button className="DiscoverMoreButton">Discover More!</button>
            </div>
-           <Lottie animationData = {movingArrow}/>
-          
+           <Lottie animationData = {movingArrow} className="LottieArrow"/>
         </div>
     )
 }

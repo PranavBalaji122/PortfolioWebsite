@@ -1,5 +1,5 @@
 .navbarItems {
-    background: transparent;
+    background: white;
     color: black; 
     height: 90px;
     display: flex;
@@ -11,7 +11,7 @@
     z-index: 1000;
     width: 100%;
     transition: all 3s ease-in;
-    border-bottom: 1px solid #f0e9e9;
+    border-bottom: 2px solid #f0e9e9;
      /* Adjust the timing function to your preference */
 }
 

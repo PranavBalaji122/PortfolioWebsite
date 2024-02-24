@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './App.css';
 import Navbar from './navbar';
-import Education from './Education';
+import AboutMe from './AboutMe';
 import IntroPage from './IntroPage';
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     <div>
       <Navbar/>
       <IntroPage/>
+      <AboutMe/>
     </div>
   );
 }
