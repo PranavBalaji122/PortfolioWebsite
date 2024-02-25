@@ -10,8 +10,10 @@ function App() {
       <Navbar/>
       <IntroPage/>
       <AboutMe/>
+      
     </div>
   );
+  //test
 }
 
 export default App;
