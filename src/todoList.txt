@@ -1,4 +1,4 @@
-1) Figure out the Linking thing for the nav bar, button and lottie
+
 
 2) Start working on the aboutme.js and aboutme.css files, make sure they are really good
 3) scale lottie down to make smalller, and move it up

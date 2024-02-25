@@ -5,17 +5,18 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   }
  
-.ContentWrapper{
+.ContentWrapperAboutMe{
     display: grid;
     justify-content: center;
     grid-gap: 1px;
     list-style: none;
     text-align: center;
-    margin-left: 5em;
+    
 }
 
-.AboutMeHeader {
-    margin-top: -10em; 
-    border-bottom: 1px solid #000; 
-    
-  }
+
+
+.AboutMeHeader{
+  
+  border-bottom: 4px solid rgb(196, 79, 79);
+}

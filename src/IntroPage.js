@@ -14,16 +14,22 @@ function IntroPage(){
      };
      
     return(
-        <div className="ContentWrapper" id = "HomeSection">
+        <div className="IntroPageMain" id = "HomeSection">
+         
+
+          <div className="ContentWrapper">
            <div className="Img">
                 <img  className="CircularPranavFace" src="circlePranavFace.png"/>
            </div>
            <div className="MainText">
                 <h1 className="GreetingText">Hey, I'm Pranav!</h1>
                 <h2 className="SubGreetingText">Student, Developer</h2>
-           </div>
-           <div className="DiscoverMoreBtn">
+                <div className="DiscoverMoreBtn">
            <Link to="aboutMeSection" smooth={true} duration={2000}>    <button className="DiscoverMoreButton" onClick={scrollToAboutMe}>Discover More!</button></Link> 
+           </div>
+           </div>
+           
+           
            </div>
            <Link to="aboutMeSection" smooth={true} duration={2000}>   <Lottie animationData = {movingArrow} className="LottieArrow" onClick={scrollToAboutMe}/></Link> 
         </div>
