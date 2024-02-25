@@ -77,6 +77,6 @@ transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .LottieArrow{
-  margin-top: -23rem;
-  transform: scale(.2);
+  margin-top: -29rem;
+  transform: scale(.15);
 }
