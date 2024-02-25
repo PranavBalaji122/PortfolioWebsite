@@ -29,9 +29,11 @@ function IntroPage(){
            </div>
            </div>
            
-           
            </div>
+           <div className="LottieArrowContainer">
            <Link to="aboutMeSection" smooth={true} duration={2000}>   <Lottie animationData = {movingArrow} className="LottieArrow" onClick={scrollToAboutMe}/></Link> 
+           </div>
+           
         </div>
     )
 }

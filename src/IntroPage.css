@@ -20,7 +20,7 @@
   
 }
 .DiscoverMoreBtn{
- padding-top: 20px;
+ padding-top: 40px;
 
 
 }
@@ -79,6 +79,16 @@ transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
 .LottieArrow{
   
 
-  transform: scale(.15);
+  transform: scale(.5);
 
+}
+
+
+.LottieArrowContainer{
+  grid-template-columns: repeat(1,auto);
+  display: grid;
+  width: 100%;
+  margin-top: -50px;
+  justify-content: center;
+  
 }
