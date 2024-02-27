@@ -6,7 +6,7 @@ import IntroPage from './IntroPage';
 
 function App() {
   return (
-    <div>
+    <div className='main'>
       <Navbar/>
       <IntroPage/>
       <AboutMe/>
