@@ -37,7 +37,7 @@
     
      display: grid;
   
-    
+
     /* grid-gap: 1em;
     list-style: none;
     text-align: center;
@@ -50,10 +50,17 @@
    
     justify-content: center;
      padding: 75px; 
-     margin-left: 12em;
+      margin-left: 12em;
      margin-right: 12em;
    
 }
+.GetToKnowMeTxt{
+  text-align: center;
+  
+}
+
+
+
 
 .ParagraphDiv {
   padding-top: 10px;
@@ -68,9 +75,13 @@
   padding-left: 5px;
   margin-top: 1em;
 }
+
+
 .aboutMeList::before{
   content: "\2937";
 }
+
+
 .firstWord{
   color:rgb(196, 79, 79);
   font-weight: bold;
@@ -83,35 +94,28 @@
 }
 
 
-.testinghelllobaby{
-  box-shadow: 0 0.3125em 0.3125em rgba(122, 6, 6, 0.1),
-  0 0 0 0.00625em hsl(var(--bg)),
-  0 0 0 0.0125em rgb(159, 159, 190);
-
-display: inline-block;
-outline: none;
-cursor: pointer;
-font-size: 14px;
-line-height: 1;
-border-radius: 500px;
-transition-property: background-color,border-color,color,box-shadow,filter;
-transition-duration: .3s;
-border: 1px solid transparent;
-letter-spacing: 2px;
-min-width: 160px;
-text-transform: uppercase;
-white-space: normal;
-font-weight: 700;
-text-align: center;
-padding: 17px 48px;
-color: #fff;
-background-color: rgb(196, 79, 79);
-height: 48px;
-transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
-}
 
 .skillsGridLayout{
   display: grid;
-  grid-template-columns: repeat(2,auto); 
+  grid-template-columns: repeat(4,auto); 
   
+}
+.skillsHeadingTxt{
+  text-align: center;
+}
+
+
+.ButtonLikeSkillsDisplay{
+  list-style-type: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  
+}
+
+
+.fakeButton{
+  
+ 
+  
+
 }

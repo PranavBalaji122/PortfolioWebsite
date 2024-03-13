@@ -43,7 +43,7 @@ function AboutMe(){
     },
     {
       head:"fakeButton",
-      skill:"Pyhton"
+      skill:"Python"
     },
     {
       head:"fakeButton",
@@ -53,6 +53,23 @@ function AboutMe(){
       head:"fakeButton",
       skill:"Node JS"
     },
+    {
+      head:"fakeButton",
+      skill:"Pandas Library"
+    },
+    {
+      head:"fakeButton",
+      skill:"Scikit Learn"
+    },
+    {
+      head:"fakeButton",
+      skill:"NumPy"
+    },
+    {
+      head:"fakeButton",
+      skill:"Matplotlib"
+    },
+   
   ]
 
 
@@ -69,7 +86,7 @@ function AboutMe(){
           <div>
           <div className="GetToKnowMeSkillsGrid">
             <div className="GetToKnowMeDiv">
-              <h2>Get to Know Me!</h2> 
+              <h2 className="GetToKnowMeTxt">Get to Know Me!</h2> 
               <div className="ParagraphDiv">
                <p className="Paragraph1Div">Hey, I'm Pranav Balaji from Marlbrough, MA! I am currently a senior at the Advanced Math and Science Academy, intrested in pursuing a 
                 major in Computer Science. In particular, I am passionate about AI, Machine Learning, and Full Stack Development. </p>
@@ -86,18 +103,18 @@ function AboutMe(){
               </div>
             </div>
             <div className="SkillsDiv">
-                <h2>Skills</h2>    
+                <h2 className="skillsHeadingTxt">Skills</h2>    
                 <div className="ParagraphDiv">
-                  <div className="skillsGridLayout">
-                    
-                  </div>
-                  {/* <ul>
-                    {skillsList.map((item)=>{
-                      return(
-                        <li><a className={item.head}>{item.skill}</a></li>
-                      )
-                    })}
-                  </ul> */}
+                  <div>
+                     <ul className = "ButtonLikeSkillsDisplay">
+                     {skillsList.map((item)=>{
+                       return(
+                         <li><a className={item.head}>{item.skill}</a></li>
+                        )
+                     })}
+                    </ul>
+                  </div> 
+
                 </div>
                 
             </div>
