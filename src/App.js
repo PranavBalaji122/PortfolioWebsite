@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './navbar';
 import AboutMe from './AboutMe';
 import IntroPage from './IntroPage';
+import Experiences from './Experiences';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Navbar/>
       <IntroPage/>
       <AboutMe/>
-      
+      <Experiences/>
     </div>
   );
   //test

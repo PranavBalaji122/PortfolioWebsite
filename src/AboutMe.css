@@ -26,7 +26,7 @@
 }
 
 .TinyLineUnder{
-  border-bottom: 4px solid rgb(196, 79, 79);
+  border-bottom: 4px solid rgb(219, 65, 65);
   border-radius: 30%;
   width: 60%; /* Adjust the width as needed */
   margin: 0 auto;
@@ -43,19 +43,24 @@
     text-align: center;
   
     grid-template-columns: repeat(2,auto); */
-     grid-template-columns: 1fr 1fr ; /*
+     /*grid-template-columns: 1fr 1fr ;*/ /*
     grid-row-gap: 10px;  /*
     list-style: none;
     text-align: center; */
-   
+    grid-template-columns: repeat(2,auto);
+    
+    grid-row-gap: 10px;
+    grid-column-gap: 40px;
+    
+    
     justify-content: center;
      padding: 75px; 
-      margin-left: 12em;
-     margin-right: 12em;
+      margin-left: 13em;
+     margin-right: 13em;
    
 }
 .GetToKnowMeTxt{
-  text-align: center;
+  
   
 }
 
@@ -65,7 +70,7 @@
 .ParagraphDiv {
   padding-top: 10px;
    /* Adjust the margin as needed */
-   text-align: left;
+   
       
    
 }
@@ -83,13 +88,13 @@
 
 
 .firstWord{
-  color:rgb(196, 79, 79);
+  color:rgb(219, 65, 65);
   font-weight: bold;
 }
 
 
 .SkillsDiv{
-  padding-left: 50px;
+  
   
 }
 
@@ -101,21 +106,42 @@
   
 }
 .skillsHeadingTxt{
-  text-align: center;
+  
 }
 
 
 .ButtonLikeSkillsDisplay{
   list-style-type: none;
-  display: inline-flex;
+  display: flex;
+  
   flex-wrap: wrap;
+  gap: 10px; 
   
 }
 
 
 .fakeButton{
   
- 
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  
+  padding: 14px 24px;
+  border: none;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  /* background: linear-gradient(to right, rgb(219, 28, 28) 0%, rgb(236, 30, 30) 50%, rgb(238, 22, 22) 100%); */
+  background-color: rgb(219, 65, 65);
+  color: #fff;
   
 
+}
+.fakeButton:hover{
+  background-color: rgb(255, 100, 100);
+  color: black;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
 }

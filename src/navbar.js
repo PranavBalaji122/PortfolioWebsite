@@ -14,17 +14,21 @@ const Navbar = () => {
         scroll.scrollTo("HomeSection", {smooth: true, duration: 500 });
    };
 
+   const scrollToExperience = () =>{
+        scroll.scrollTo("ExperienceSection", {smooth: true, duration: 500 });
+   }
+
 
    
 // href={item.url}
     return (
         <div className="navbarItems">         
-            <h1 className="navbar-logo">PB<i className="fab fa-react"></i></h1>
+              <Link to="HomeSection" smooth={true} duration={500}> <h1 className="navbar-logo">PB<i className="fab fa-react"></i></h1></Link>
             <ul className='navMenu'>
                 <li>
                 <Link to="HomeSection" smooth={true} duration={500}>  <a className="nav-links" onClick={scrollToHome}>Home</a> </Link>
                     <Link to="aboutMeSection" smooth={true} duration={1000}>  <a className="nav-links" onClick={scrollToAboutMe}>About Me</a> </Link>
-                    <a className="nav-links">Experience</a>
+                    <Link to="aboutMeSection" smooth={true} duration={1000}>  <a className="nav-links" onClick={scrollToExperience}>Experience</a></Link>
                     <a className="nav-links">Projects</a>
                 </li>
             </ul>

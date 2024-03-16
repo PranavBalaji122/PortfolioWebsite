@@ -69,6 +69,30 @@ function AboutMe(){
       head:"fakeButton",
       skill:"Matplotlib"
     },
+    {
+      head:"fakeButton",
+      skill:"GitHub"
+    },
+    {
+      head:"fakeButton",
+      skill:"Project Management"
+    },
+    {
+      head:"fakeButton",
+      skill:"Teamwork"
+    },
+    {
+      head:"fakeButton",
+      skill:"Leadership"
+    },
+    {
+      head:"fakeButton",
+      skill:"Patience"
+    },
+    {
+      head:"fakeButton",
+      skill:"Time Management"
+    },
    
   ]
 
