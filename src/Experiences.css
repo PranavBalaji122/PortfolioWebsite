@@ -4,5 +4,37 @@
     justify-content: center;
 }
 
+.cardHeader{
+    
+    
+    display: flex;
+    
+    width: 100%;
+    background: #fff;
+    margin-top: 50px;
+    margin-bottom: 69px;
+    transition: 0.3s;
+    flex-direction: column;
+    background: linear-gradient(10deg, #66a6b8 20%, #5471b9 80%);
+
+}
+.Card{
+    border-radius: 10px;
+    box-shadow: 0 24px 32px 0 rgba(0, 0, 0 , 0.12);
+}
+
+.CarsouelDiv{
+    padding-top: 10px;
+    padding: 75px; 
 
 
+    /*dellet below after done using */
+    margin-bottom: 20em;
+   
+}
+
+.firstLogo{
+    width: 25%;
+    border-radius: 20%;
+    
+}

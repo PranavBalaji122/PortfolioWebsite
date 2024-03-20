@@ -27,8 +27,8 @@ const Navbar = () => {
             <ul className='navMenu'>
                 <li>
                 <Link to="HomeSection" smooth={true} duration={500}>  <a className="nav-links" onClick={scrollToHome}>Home</a> </Link>
-                    <Link to="aboutMeSection" smooth={true} duration={1000}>  <a className="nav-links" onClick={scrollToAboutMe}>About Me</a> </Link>
-                    <Link to="aboutMeSection" smooth={true} duration={1000}>  <a className="nav-links" onClick={scrollToExperience}>Experience</a></Link>
+                    <Link to="aboutMeSection" smooth={true} duration={1000}  offset={-220}>  <a className="nav-links" onClick={scrollToAboutMe}>About Me</a> </Link>
+                    <Link to="experiencesSection" smooth={true} duration={1000} offset={-220}>  <a className="nav-links" onClick={scrollToExperience}>Experience</a></Link>
                     <a className="nav-links">Projects</a>
                 </li>
             </ul>

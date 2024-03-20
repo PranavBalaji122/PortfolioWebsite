@@ -25,13 +25,13 @@ function IntroPage(){
                 <h1 className="GreetingText">Hey, I'm Pranav!</h1>
                 <h2 className="SubGreetingText">Student, Developer</h2>
                 <div className="DiscoverMoreBtn">
-           <Link to="aboutMeSection" smooth={true} duration={2000}>    <button className="DiscoverMoreButton" onClick={scrollToAboutMe}>Discover More!</button></Link> 
+           <Link to="aboutMeSection" smooth={true} duration={2000} offset={-220}>    <button className="DiscoverMoreButton" onClick={scrollToAboutMe}>Discover More!</button></Link> 
            </div>
            </div>
            
            </div>
            <div className="LottieArrowContainer">
-           <Link to="aboutMeSection" smooth={true} duration={2000}>   <Lottie animationData = {movingArrow} className="LottieArrow" onClick={scrollToAboutMe}/></Link> 
+           <Link to="aboutMeSection" smooth={true} duration={2000} offset={-220}>   <Lottie animationData = {movingArrow} className="LottieArrow" onClick={scrollToAboutMe}/></Link> 
            </div>
            
         </div>

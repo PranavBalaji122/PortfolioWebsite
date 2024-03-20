@@ -100,9 +100,9 @@ function AboutMe(){
 
 
     return(
-        <div className="AboutMeMain">
-           <div className="AboutMeHeaderDiv" id = "aboutMeSection">
-              <h1 className="AboutMeHeader">About Me!</h1>
+        <div className="AboutMeMain" id = "aboutMeSection">
+           <div className="AboutMeHeaderDiv">
+              <h1 className="AboutMeHeader" >About Me!</h1>
                 <h1 className="TinyLineUnder"></h1>
           </div>
 
@@ -126,7 +126,7 @@ function AboutMe(){
                 </ul>
               </div>
             </div>
-            <div className="SkillsDiv">
+            <div className="SkillsDiv" >
                 <h2 className="skillsHeadingTxt">Skills</h2>    
                 <div className="ParagraphDiv">
                   <div>
