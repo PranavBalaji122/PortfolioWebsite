@@ -1,47 +1,41 @@
 import './Experiences.css'
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
-
+import React, {useState} from 'react';
 
 
 function Experiences(){
-    const responsive = {
-        superLargeDesktop: {
-          // the naming can be any, depends on you.
-          breakpoint: { max: 4000, min: 3000 },
-          items: 5
-        },
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 3
-        },
-        tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 2
-        },
-        mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
-        }
-      };    
+  const [currentDiv, setCurrentDiv] = useState(1);
 
-    const expereinces = [
-        {
-            head:"ExperienceCard",
-            experience:"expereince1"
-        },
-        {
-            head:"ExperienceCard",
-            experience:"expereince1"
-        },
-        {
-            head:"ExperienceCard",
-            experience:"expereince1"
-        },
-    ]
+  const handleButtonClick = (divNumber) => {
+    setCurrentDiv(divNumber);
+  }
 
-   
+  const expereinces = [
+    {
+        head:"Expereince",
+        experience:"First Tech Challenge",
+        divNumber: 1
+    },
+    {
+        head:"Expereince",
+        experience:"expereince1",
+        divNumber: 2
+    },
+    {
+        head:"Expereince",
+        experience:"expereince1",
+        divNumber: 3
+    },
+  ]
 
+
+  const div1Content = 
+      <div>
+        <h2>First Tech Challenge Team 15089</h2>
+        <span>September 2018</span>
+
+      </div>
 
     return(
         <div className="ExperiencesMain" id = "experiencesSection">
@@ -50,28 +44,25 @@ function Experiences(){
                 <h1 className='TinyLineUnder'></h1>
             </div>
 
+          <div className='experiencesSubSection'>
+              <div className='experiencesShelfLeft'>              
+                <ul>
+                    {expereinces.map((item,index)=>{
+                        return(
+                          <button className="ExpereiencesBtn" onClick={() => handleButtonClick(item.divNumber)}><a className={item.head}>{item.experience}</a></button>
+                      )
+                    })}
+                  </ul>
+              </div>
+              
 
-            <div className="CarsouelDiv">
-                <Carousel responsive={responsive}>
-                    <div className='Card'>
-                        <div className='cardHeader'>
-                             
-                             <img src='firstLogo.png' className="firstLogo"></img>    
-                             <h2>First Tech Challenge</h2>
-                          
-                      </div>
-                        <div>
-                            f
-                        </div>
-                    </div>
-                    
-                    <div>item1</div>
-                    <div>item1</div>
-                    <div>item1</div>
-                   
-                    
-              </Carousel>
-            </div>
+              {currentDiv === 1 && <div >{div1Content}</div>}
+              {currentDiv === 2 && <div>Content of Div 2</div>}
+              {currentDiv === 3 && <div>Content of Div 3</div>}     
+
+
+          </div>
+            
 
         </div>
     )

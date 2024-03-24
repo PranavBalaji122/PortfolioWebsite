@@ -4,37 +4,55 @@
     justify-content: center;
 }
 
-.cardHeader{
-    
-    
-    display: flex;
-    
-    width: 100%;
-    background: #fff;
-    margin-top: 50px;
-    margin-bottom: 69px;
-    transition: 0.3s;
-    flex-direction: column;
-    background: linear-gradient(10deg, #66a6b8 20%, #5471b9 80%);
 
-}
-.Card{
-    border-radius: 10px;
-    box-shadow: 0 24px 32px 0 rgba(0, 0, 0 , 0.12);
+.experiencesShelfLeft{
+    
+    list-style: none;
+    display: block;
 }
 
-.CarsouelDiv{
-    padding-top: 10px;
-    padding: 75px; 
+.ExperiencesMain{
+    margin-left: 13em;
+    margin-right: 13em;
+    
+}
+.ExpereiencesBtn{
 
-
-    /*dellet below after done using */
-    margin-bottom: 20em;
+     display: flex; 
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    word-wrap: break-word; 
+    width: 150px;
+    
+    padding: 20px 35px;
+    border: none;
+    
+    background-color: white;
+    border-left: 4px solid rgb(219, 65, 65);
+    
+    
+}
+.ExpereiencesBtn:hover{
+    background-color:  rgb(165, 61, 61);
+  color: white;
    
 }
 
-.firstLogo{
-    width: 25%;
-    border-radius: 20%;
+
+.experiencesSubSection{
+    padding: 50px;
     
+   display: grid;
+   justify-content: center;
+   grid-template-columns: repeat(2,auto);
+   grid-column-gap: 300px; 
+   /* grid-template-columns: 300px 400px; */
+
+
+    /*DELET THISD*/
+    margin-bottom: 20em;
 }
+

@@ -59,8 +59,7 @@ transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
   grid-template-columns: repeat(2,auto);
   list-style: none;
   text-align: center;
-  width:100vw;
-    justify-content: center;
+  justify-content: center;
     
     
 }
