@@ -1,0 +1,68 @@
+
+
+.ProjectsHeaderDiv{
+    display: grid;
+    justify-content: center;
+}
+
+
+
+.imageForProjectsSection{
+    border-radius: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
+    transition: filter 0.3s ease;
+}
+
+.imageForProjectsSection:hover{
+    filter: grayscale(50%) brightness(120%);
+}
+
+.imageDivForProjects{
+    
+}
+
+
+
+
+.EachProjectDiv{
+    padding: 75px;
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    text-align: left;
+    /* delete below after */
+    
+
+
+}
+
+.allProjectsDiv{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px; 
+    
+}
+
+
+.RestOfInfoForProjectsSection{
+    max-width: 520px;
+    }
+
+.SubTextForProjects{
+    color: rgb(85, 84, 84);
+    margin-top: 2em;
+    white-space: normal;
+}
+
+
+
+.gitHubButton{
+    margin-top: 1em;
+    margin-left: -10px;
+    width: 10%;
+    transition: transform .3s ease;
+}
+.gitHubButton:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}

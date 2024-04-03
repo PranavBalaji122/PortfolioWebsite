@@ -37,8 +37,8 @@
 
 .GetToKnowMeSkillsGrid{
     
-     display: grid;
-  
+     display: flex;
+
 
     /* grid-gap: 1em;
     list-style: none;

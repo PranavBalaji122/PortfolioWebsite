@@ -17,6 +17,9 @@ const Navbar = () => {
    const scrollToExperience = () =>{
         scroll.scrollTo("ExperienceSection", {smooth: true, duration: 500 });
    }
+   const scrollToProjects = () =>{
+    scroll.scrollTo("ProjectsSection", {smooth: true, duration: 500 });
+}
 
 
    
@@ -26,10 +29,10 @@ const Navbar = () => {
               <Link to="HomeSection" smooth={true} duration={500}> <h1 className="navbar-logo">PB<i className="fab fa-react"></i></h1></Link>
             <ul className='navMenu'>
                 <li>
-                <Link to="HomeSection" smooth={true} duration={500}>  <a className="nav-links" onClick={scrollToHome}>Home</a> </Link>
+                    <Link to="HomeSection" smooth={true} duration={500}>  <a className="nav-links" onClick={scrollToHome}>Home</a> </Link>
                     <Link to="aboutMeSection" smooth={true} duration={1000}  offset={-220}>  <a className="nav-links" onClick={scrollToAboutMe}>About Me</a> </Link>
                     <Link to="experiencesSection" smooth={true} duration={1000} offset={-220}>  <a className="nav-links" onClick={scrollToExperience}>Experience</a></Link>
-                    <a className="nav-links">Projects</a>
+                    <Link to="projectsSection" smooth={true} duration={1000} offset={-220}>  <a className="nav-links" onClick={scrollToProjects}>Projects</a></Link>
                 </li>
             </ul>
 

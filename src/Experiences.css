@@ -12,8 +12,8 @@
 }
 
 .ExperiencesMain{
-    margin-left: 13em;
-    margin-right: 13em;
+    /* margin-left: 13em;
+    margin-right: 13em; */
     
 }
 .ExpereiencesBtn{
@@ -32,27 +32,52 @@
     
     background-color: white;
     border-left: 4px solid rgb(219, 65, 65);
+    transition: background-color 0.3s, color 0.3s;
+    color: black;
     
     
 }
 .ExpereiencesBtn:hover{
     background-color:  rgb(165, 61, 61);
-  color: white;
-   
+    color: white;
+    
+}
+.ExpereiencesBtn.active {
+    background-color: rgb(165, 61, 61);
+    color: white;
 }
 
 
 .experiencesSubSection{
-    padding: 50px;
+    padding: 75px;
     
-   display: grid;
+   display: flex;
    justify-content: center;
+   /* justify-content: center; */
    grid-template-columns: repeat(2,auto);
-   grid-column-gap: 300px; 
-   /* grid-template-columns: 300px 400px; */
+   gap: 4em;
+   /* grid-template-columns: 300px 7; */
 
 
-    /*DELET THISD*/
-    margin-bottom: 20em;
+    /* this is for the space between experience section and the projects section */
+    margin-bottom: 9em;
 }
 
+.expereinceFTCBulletPoint{
+    list-style-type: none;
+    padding-left: 5px;
+    margin-top: 1em;
+}
+.expereinceFTCBulletPoint::before{
+    content: "\2937";
+}
+
+.expereinceInformationHeader{
+    padding-bottom: 30px;
+}
+
+
+.expereinceInformationSubHeader{
+    padding-bottom: 30px;
+
+}
