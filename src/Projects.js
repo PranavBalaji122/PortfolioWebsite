@@ -14,7 +14,7 @@ function Projects(){
             <div className='RestOfInfoForProjectsSection'>
                 <div>
                     <h1>Flappy Bird Project</h1>
-                    <h3 className='SubTextForProjects'>Used Java to recreate the popular game Flappy Bird, with obstacle generation and score tracking</h3>
+                    <h3 className='SubTextForProjects'>Used Java to recreate the popular game Flappy Bird, with obstacle generation and score tracking!</h3>
                 </div>
                 <div>
                     <img className = 'gitHubButton' src='githubLogo.png'></img>
@@ -31,7 +31,7 @@ function Projects(){
             <div className='RestOfInfoForProjectsSection'>
                 <div>
                     <h1>secondProj</h1>
-                    <h3 className='SubTextForProjects'>Used Java to recreate the popular game Flappy Bird, with obstacle generation and score tracking</h3>
+                    <h3 className='SubTextForProjects'>Used Java to recreate the popular game Flappy Bird, with obstacle generation and score tracking!</h3>
                 </div>
                 <div>
                     <img className = 'gitHubButton' src='githubLogo.png'></img>

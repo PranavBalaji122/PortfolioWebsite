@@ -66,3 +66,56 @@
     transform: scale(1.2);
     cursor: pointer;
 }
+
+
+@media (min-width: 530px) and (max-width: 1050px) {
+    .EachProjectDiv{
+        padding: 75px;
+        display: grid;
+        justify-content: center;
+        gap: 5em;
+        text-align: left;
+        grid-template-columns: repeat(1, auto);
+
+        /* delete below after */
+        
+    
+    
+    }
+
+    .ProjectsMain{
+        transform: scale(.85);
+    }
+
+
+
+
+}
+
+@media (min-width: 1px) and (max-width: 529px) {
+
+    .ProjectsMain{
+        justify-content: center;
+        transform: scale(0.7);
+        margin-left: -4em;
+    }
+    .EachProjectDiv{
+        padding: 75px;
+        display: grid;
+        justify-content: center;
+        gap: 5em;
+        text-align: left;
+        grid-template-columns: repeat(1, auto);
+        /* delete below after */
+        
+    
+    
+    }
+    .ProjectsHeaderDiv{
+        display: grid;
+        justify-content: center;
+        margin-right: -5em;
+    }
+
+
+}

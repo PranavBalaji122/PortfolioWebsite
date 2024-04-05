@@ -52,18 +52,20 @@
     grid-template-columns: repeat(2,auto);
     
     grid-row-gap: 10px;
-    grid-column-gap: 40px;
+    grid-column-gap: 80px;
     
     
     justify-content: center;
      padding: 75px; 
-      margin-left: 13em;
-     margin-right: 13em;
-   
+     
 }
 .GetToKnowMeTxt{
   
   
+}
+
+.GetToKnowMeDiv{
+  width: 500px;
 }
 
 
@@ -96,7 +98,7 @@
 
 
 .SkillsDiv{
-  
+  max-width: 500px;
   
 }
 
@@ -147,3 +149,83 @@
   transition: all 0.2s ease-out;
   cursor: pointer;
 }
+
+/* FOR MOBILE */
+
+
+
+@media (min-width: 530px) and (max-width: 1050px) {
+  .GetToKnowMeSkillsGrid{
+    
+    display: grid;
+
+
+   /* grid-gap: 1em;
+   list-style: none;
+   text-align: center;
+ 
+   grid-template-columns: repeat(2,auto); */
+    /*grid-template-columns: 1fr 1fr ;*/ /*
+   grid-row-gap: 10px;  /*
+   list-style: none;
+   text-align: center; */
+   grid-template-columns: repeat(1,auto);
+   
+   grid-row-gap: 100px;
+   grid-column-gap: 100px;
+   
+   
+   justify-content: center;
+    padding: 75px; 
+    
+    
+    
+}
+
+
+.AboutMeMain{
+  justify-content: center;
+}
+
+
+}
+@media (min-width: 1px) and (max-width: 529px) {
+  .GetToKnowMeSkillsGrid{
+    
+    display: grid;
+
+
+   /* grid-gap: 1em;
+   list-style: none;
+   text-align: center;
+ 
+   grid-template-columns: repeat(2,auto); */
+    /*grid-template-columns: 1fr 1fr ;*/ /*
+   grid-row-gap: 10px;  /*
+   list-style: none;
+   text-align: center; */
+   grid-template-columns: repeat(1,auto);
+   
+   grid-row-gap: 100px;
+   grid-column-gap: 100px;
+   
+   
+   justify-content: center;
+    padding: 75px; 
+    
+    
+    
+}
+
+
+.AboutMeMain{
+  justify-content: center;
+  transform: scale(0.7);
+}
+
+
+}
+
+
+
+

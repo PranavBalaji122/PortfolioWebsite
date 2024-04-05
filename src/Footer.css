@@ -37,3 +37,35 @@
 .nameDivForFooter{
     margin-top: .5em;
 }
+
+@media (min-width: 530px) and (max-width: 1050px) {
+    .FooterDiv{
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+        grid-gap: 15em;  
+    }
+
+
+}
+
+@media (min-width: 300px) and (max-width: 529px) {
+    .FooterDiv{
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+        grid-gap: 5em;  
+    }
+    
+
+}
+@media (min-width: 1px) and (max-width: 300px) {
+    .FooterDiv{
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+        grid-gap: 1em;  
+    }
+    
+
+}
