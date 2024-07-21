@@ -27,6 +27,14 @@ function AboutMe(){
     },
     {
       head:"fakeButton",
+      skill:"Django"
+    },
+    {
+      head:"fakeButton",
+      skill:"SQL"
+    },
+    {
+      head:"fakeButton",
       skill:"HTML"
     },
     {
