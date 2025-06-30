@@ -13,14 +13,12 @@ export default function Home() {
   return (
     <div className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen">
       <Navigation />
-      <Suspense fallback={<div className="h-screen flex items-center justify-center text-white">Loading...</div>}>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Skills />
-        <Contact />
-      </Suspense>
+      <Hero />
+      <About />
+      <Experience />
+      <Projects />
+      <Skills />
+      <Contact />
     </div>
   )
 }
