@@ -48,12 +48,12 @@ export default function Experience() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Experience</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto"></div>
         </motion.div>
 
         <div className="relative">
           {/* Timeline Line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-400 to-pink-400"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-400 to-cyan-400"></div>
 
           {experiences.map((exp, index) => (
             <motion.div
@@ -65,15 +65,15 @@ export default function Experience() {
               className="relative mb-12 ml-16"
             >
               {/* Timeline Dot */}
-              <div className="absolute -left-10 top-6 w-4 h-4 bg-purple-400 rounded-full border-4 border-slate-900"></div>
+              <div className="absolute -left-10 top-6 w-4 h-4 bg-blue-400 rounded-full border-4 border-slate-900"></div>
 
               <div
-                className={`bg-gradient-to-br ${exp.isUpcoming ? "from-green-500/20 to-blue-500/20" : "from-purple-500/20 to-pink-500/20"} rounded-2xl p-8 backdrop-blur-sm border border-white/10 hover:border-purple-400/50 transition-all duration-300`}
+                className={`bg-gradient-to-br ${exp.isUpcoming ? "from-green-500/20 to-blue-500/20" : "from-blue-500/20 to-cyan-500/20"} rounded-2xl p-8 backdrop-blur-sm border border-white/10 hover:border-blue-400/50 transition-all duration-300`}
               >
                 <div className="flex flex-wrap items-start justify-between mb-4">
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-2">{exp.title}</h3>
-                    <h4 className="text-xl text-purple-400 mb-2">{exp.company}</h4>
+                    <h4 className="text-xl text-blue-400 mb-2">{exp.company}</h4>
                   </div>
                   {exp.isUpcoming && (
                     <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm font-semibold">
@@ -97,7 +97,7 @@ export default function Experience() {
                   <ul className="space-y-2 text-gray-300">
                     {exp.description.map((item, i) => (
                       <li key={i} className="flex items-start space-x-2">
-                        <span className="text-purple-400 mt-2">•</span>
+                        <span className="text-blue-400 mt-2">•</span>
                         <span>{item}</span>
                       </li>
                     ))}

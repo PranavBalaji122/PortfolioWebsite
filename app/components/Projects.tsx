@@ -78,7 +78,7 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Projects</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -90,7 +90,7 @@ export default function Projects() {
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
               whileHover={{ y: -10 }}
-              className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl p-6 backdrop-blur-sm border border-white/10 hover:border-purple-400/50 transition-all duration-300"
+              className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-2xl p-6 backdrop-blur-sm border border-white/10 hover:border-blue-400/50 transition-all duration-300"
             >
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-xl font-bold text-white">{project.title}</h3>
@@ -99,13 +99,13 @@ export default function Projects() {
                     whileHover={{ scale: 1.1 }}
                     className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
                   >
-                    <Github size={16} className="text-purple-400" />
+                    <Github size={16} className="text-blue-400" />
                   </motion.button>
                   <motion.button
                     whileHover={{ scale: 1.1 }}
                     className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
                   >
-                    <ExternalLink size={16} className="text-purple-400" />
+                    <ExternalLink size={16} className="text-blue-400" />
                   </motion.button>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export default function Projects() {
                 <ul className="space-y-1">
                   {project.highlights.map((highlight, i) => (
                     <li key={i} className="text-xs text-gray-400 flex items-start space-x-2">
-                      <span className="text-purple-400 mt-1">•</span>
+                      <span className="text-blue-400 mt-1">•</span>
                       <span>{highlight}</span>
                     </li>
                   ))}
@@ -131,7 +131,7 @@ export default function Projects() {
 
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech) => (
-                  <span key={tech} className="px-2 py-1 bg-purple-500/20 text-purple-300 rounded text-xs">
+                  <span key={tech} className="px-2 py-1 bg-blue-500/20 text-blue-300 rounded text-xs">
                     {tech}
                   </span>
                 ))}

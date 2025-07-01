@@ -15,7 +15,7 @@ export default function About() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">About Me</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -40,15 +40,15 @@ export default function About() {
 
             <div className="space-y-4">
               <div className="flex items-center space-x-3 text-gray-300">
-                <GraduationCap className="text-purple-400" size={20} />
+                <GraduationCap className="text-blue-400" size={20} />
                 <span>Bachelor's in Computer Science, Purdue University</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
-                <Calendar className="text-purple-400" size={20} />
+                <Calendar className="text-blue-400" size={20} />
                 <span>Expected Graduation: May 2027</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
-                <MapPin className="text-purple-400" size={20} />
+                <MapPin className="text-blue-400" size={20} />
                 <span>West Lafayette, Indiana</span>
               </div>
             </div>
@@ -61,11 +61,11 @@ export default function About() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl p-8 backdrop-blur-sm border border-white/10">
+            <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-2xl p-8 backdrop-blur-sm border border-white/10">
               <h3 className="text-2xl font-bold text-white mb-6">Education</h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="text-xl font-semibold text-purple-400">Purdue University</h4>
+                  <h4 className="text-xl font-semibold text-blue-400">Purdue University</h4>
                   <p className="text-gray-300">Bachelor of Science in Computer Science</p>
                   <p className="text-gray-400">Expected May 2027</p>
                 </div>
@@ -81,7 +81,7 @@ export default function About() {
                       "Linear Algebra",
                       "MATLAB Computing",
                     ].map((course) => (
-                      <span key={course} className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm">
+                      <span key={course} className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">
                         {course}
                       </span>
                     ))}

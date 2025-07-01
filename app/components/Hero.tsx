@@ -8,7 +8,7 @@ import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
 function AnimatedSphere() {
   return (
     <Sphere visible args={[1, 100, 200]} scale={2}>
-      <MeshDistortMaterial color="#8b5cf6" attach="material" distort={0.3} speed={1.5} roughness={0} />
+      <MeshDistortMaterial color="#3b82f6" attach="material" distort={0.3} speed={1.5} roughness={0} />
     </Sphere>
   )
 }
@@ -26,7 +26,7 @@ export default function Hero() {
             className="text-white z-10 order-2 lg:order-1"
           >
             <motion.h1
-              className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent"
+              className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -111,7 +111,7 @@ export default function Hero() {
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Number.POSITIVE_INFINITY, duration: 2 }}
         >
-          <ArrowDown size={32} className="text-purple-400" />
+          <ArrowDown size={32} className="text-blue-400" />
         </motion.div>
       </div>
     </section>
