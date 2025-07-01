@@ -13,7 +13,7 @@ const experiences = [
     isUpcoming: true,
   },
   {
-    title: "Software Developer Intern",
+    title: "Data Science Intern",
     company: "Indian Institute of Technology Bombay",
     location: "Bombay, IN",
     period: "July 2024 – Aug 2024",
