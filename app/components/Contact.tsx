@@ -63,7 +63,7 @@ export default function Contact() {
 
             <div className="flex space-x-6 pt-6">
               <motion.a
-                href="https://github.com/pranavbalaji"
+                href="https://github.com/pranavbalaji122"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: 360 }}

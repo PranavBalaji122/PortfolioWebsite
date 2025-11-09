@@ -61,7 +61,7 @@ export default function Hero() {
               transition={{ delay: 0.9 }}
             >
               <motion.a
-                href="https://github.com/pranavbalaji"
+                href="https://github.com/pranavbalaji122"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: 360 }}
