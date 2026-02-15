@@ -49,7 +49,7 @@ export default function Hero() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
             >
-              Passionate about machine learning, full-stack development, and creating innovative solutions. Currently
+              Passionate about applied AI/ML machine learning, full-stack development, and distributed systems. Currently
               pursuing my Bachelor's at Purdue University.
             </motion.p>
 

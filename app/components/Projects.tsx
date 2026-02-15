@@ -1,12 +1,25 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ExternalLink, Github, Calendar } from "lucide-react"
+import { Github, Calendar } from "lucide-react"
 
 const projects = [
   {
+    title: "Local Brain",
+    period: "Nov 2025 – Dec 2025",
+    description:
+    "Built LocalBrain, a full-stack local “second brain” for AI agents that ingests data (Gmail/Slack/history) into a markdown vault and serves personalized context via custom agents + MCP",
+    technologies: ["Python", "FastAPI", "Electron", "JavaScript", "Claude API", "MCP"],
+    highlights: [
+      "Built a local-first “personalization layer” that consolidates personal context from multiple connectors into a readable markdown vault that any AI app can query",
+      
+      "Designed an LLM-powered ingestion pipeline that converts raw updates into structured markdown, uses Levenshtein fuzzy matching, validates structure, and retries up to 3 times, while storing citation metadata in .json sidecars.",
+    ],
+    githubUrl: "https://github.com/braindead-dev/localbrain",
+  },
+  {
     title: "Sports Betting Models",
-    period: "Jan 2025 – Feb 2025",
+    period: "Jun 2025 – Aug 2025",
     description:
       "Engineered a Random Forest Regression model using scikit-learn on 8,000+ NBA player logs, predicting points, assists, and rebounds with 65% accuracy.",
     technologies: ["Python", "Pandas", "NumPy", "Odds API", "Scikit-Learn", "PostgreSQL"],
@@ -15,6 +28,7 @@ const projects = [
       "Advanced feature engineering reducing MAE by 12%",
       "Live updates every 15 minutes with automated recommendations",
     ],
+    githubUrl: "https://github.com/PranavBalaji122/betting",
   },
   {
     title: "AI/ML Movie Library",
@@ -27,6 +41,7 @@ const projects = [
       "RESTful API with JWT authentication",
       "Database of 45,000 movies with efficient retrieval",
     ],
+    githubUrl: "https://github.com/PranavBalaji122/Movie-Recomandation-App",
   },
   {
     title: "Portfolio Website",
@@ -39,6 +54,7 @@ const projects = [
       "Optimized performance and SEO",
       "Interactive project showcases",
     ],
+    githubUrl: "https://github.com/PranavBalaji122/PortfolioWebsite",
   },
   {
     title: "Flappy Bird Game",
@@ -51,6 +67,7 @@ const projects = [
       "Created dynamic pipe generation with randomized heights and spacing",
       "Built high-score tracking system with persistent data storage",
     ],
+    githubUrl: "https://github.com/PranavBalaji122/flappy-bird",
   },
   {
     title: "Quebec Election Data Analysis",
@@ -63,6 +80,7 @@ const projects = [
       "Used linear and logistic regression with KNN clustering achieving 82% accuracy across 27 political parties",
       "Focused on visual data presentation using tidyverse and ggplot2 for clearer insights",
     ],
+    githubUrl: "https://github.com/PranavBalaji122/quebec-election",
   },
 ]
 
@@ -95,18 +113,18 @@ export default function Projects() {
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-xl font-bold text-white">{project.title}</h3>
                 <div className="flex space-x-2">
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
-                  >
-                    <Github size={16} className="text-blue-400" />
-                  </motion.button>
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
-                  >
-                    <ExternalLink size={16} className="text-blue-400" />
-                  </motion.button>
+                  {project.githubUrl && (
+                    <motion.a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.1 }}
+                      className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors inline-flex"
+                      aria-label={`View ${project.title} on GitHub`}
+                    >
+                      <Github size={16} className="text-blue-400" />
+                    </motion.a>
+                  )}
                 </div>
               </div>
 

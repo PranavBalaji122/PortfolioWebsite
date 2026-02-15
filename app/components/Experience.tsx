@@ -5,11 +5,16 @@ import { Calendar, MapPin } from "lucide-react"
 
 const experiences = [
   {
-    title: "AI Engineer Intern",
-    company: "Staples",
+    title: "Software / AI Engineer Intern",
+    company: "Staples Inc.",
     location: "Boston, MA",
     period: "Jun 2025 – Aug 2025",
-    description: "Incoming Software Engineering Intern Summer 2025 (AI Intern)",
+    description: [
+      "Built an AI Jenkins failure agent for 60+ daily pipeline failures; cut CI/CD troubleshooting time 60% saving 5+ hours",
+      "Built a RAG-powered analytics chatbot that queries 1M+ live rows and auto-generates dashboards saving 2+ hours",
+      "Implemented data retrieval + structured outputs to deliver reliable, source-backed insights for upper management",
+      "Migrated release-management UI, managing 100+ microservices, from JSP to React; fixed Spring Boot backend logic",
+    ],
     isUpcoming: true,
   },
   {
@@ -96,8 +101,8 @@ export default function Experience() {
                 {Array.isArray(exp.description) ? (
                   <ul className="space-y-2 text-gray-300">
                     {exp.description.map((item, i) => (
-                      <li key={i} className="flex items-start space-x-2">
-                        <span className="text-blue-400 mt-2">•</span>
+                      <li key={i} className="flex items-center gap-2">
+                        <span className="text-blue-400 shrink-0 leading-none">•</span>
                         <span>{item}</span>
                       </li>
                     ))}

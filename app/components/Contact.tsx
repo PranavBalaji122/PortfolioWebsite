@@ -56,7 +56,7 @@ export default function Contact() {
                 <MapPin className="text-blue-400" size={24} />
                 <div>
                   <p className="text-white font-semibold">Location</p>
-                  <p className="text-gray-300">West Lafayette, Indiana</p>
+                  <p className="text-gray-300">Boston, Massachusetts</p>
                 </div>
               </motion.div>
             </div>
@@ -135,7 +135,7 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mt-16 pt-8 border-t border-white/10"
         >
-          <p className="text-gray-400">© 2024 Pranav Balaji. Built with Next.js and Tailwind CSS.</p>
+          <p className="text-gray-400">© 2026 Pranav Balaji. Built with Next.js and Tailwind CSS.</p>
         </motion.div>
       </div>
     </section>

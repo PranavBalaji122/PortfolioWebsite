@@ -74,12 +74,13 @@ export default function About() {
                   <div className="flex flex-wrap gap-2">
                     {[
                       "Data Structures & Algorithms",
-                      "Python Programming",
-                      "Data Science",
-                      "C Programming",
+                      "Object Oriented Programming",
+                      "Operating Systems",
+                      "Computing in Python",
+                      "Python for Data Science",
+                      "Fundamentals in C",
                       "Discrete Mathematics",
                       "Linear Algebra",
-                      "MATLAB Computing",
                     ].map((course) => (
                       <span key={course} className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">
                         {course}
