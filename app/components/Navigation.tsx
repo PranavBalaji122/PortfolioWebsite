@@ -1,86 +1,81 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
-import { Menu, X } from "lucide-react"
+import { useEffect, useState } from "react"
+import { navigation } from "../data/portfolio"
+
+function NavigationLink({
+  item,
+  onNavigate,
+}: {
+  item: (typeof navigation)[number]
+  onNavigate?: () => void
+}) {
+  return (
+    <a
+      href={item.href}
+      onClick={onNavigate}
+      target={item.newTab ? "_blank" : undefined}
+      rel={item.newTab ? "noreferrer" : undefined}
+    >
+      {item.label}
+    </a>
+  )
+}
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50)
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setIsOpen(false)
     }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
+
+    window.addEventListener("keydown", closeOnEscape)
+    return () => window.removeEventListener("keydown", closeOnEscape)
   }, [])
 
-  const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Experience", href: "#experience" },
-    { name: "Projects", href: "#projects" },
-    { name: "Skills", href: "#skills" },
-    { name: "Contact", href: "#contact" },
-  ]
-
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-slate-900/90 backdrop-blur-md" : "bg-transparent"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
-          <motion.div whileHover={{ scale: 1.05 }} className="text-2xl font-bold text-white">
-            PB
-          </motion.div>
+    <>
+      <header className="site-header">
+        <a className="wordmark" href="#top" aria-label="Pranav Balaji, back to top">
+          PB<span aria-hidden="true">/</span>
+        </a>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            {navItems.map((item) => (
-              <motion.a
-                key={item.name}
-                href={item.href}
-                whileHover={{ scale: 1.1 }}
-                className="text-gray-300 hover:text-white transition-colors duration-200"
-              >
-                {item.name}
-              </motion.a>
-            ))}
-          </div>
+        <nav className="header-links" aria-label="Primary navigation">
+          {navigation.map((item) => (
+            <NavigationLink key={item.label} item={item} />
+          ))}
+        </nav>
 
-          {/* Mobile Navigation Toggle */}
-          <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-white">
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-        </div>
+        <button
+          className="menu-button"
+          type="button"
+          aria-expanded={isOpen}
+          aria-controls="mobile-navigation"
+          onClick={() => setIsOpen((value) => !value)}
+        >
+          <span>{isOpen ? "Close" : "Menu"}</span>
+          <span className="menu-glyph" aria-hidden="true">
+            <i />
+            <i />
+          </span>
+        </button>
 
-        {/* Mobile Navigation Menu */}
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="md:hidden bg-slate-800 rounded-lg mt-2 p-4"
-          >
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="block py-2 text-gray-300 hover:text-white transition-colors duration-200"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.name}
-              </a>
-            ))}
-          </motion.div>
-        )}
-      </div>
-    </motion.nav>
+        <nav
+          id="mobile-navigation"
+          className="mobile-navigation"
+          aria-label="Mobile navigation"
+          data-open={isOpen}
+        >
+          {navigation.map((item, index) => (
+            <div className="mobile-navigation-row" key={item.label}>
+              <span aria-hidden="true">0{index + 1}</span>
+              <NavigationLink item={item} onNavigate={() => setIsOpen(false)} />
+            </div>
+          ))}
+        </nav>
+      </header>
+
+    </>
   )
 }

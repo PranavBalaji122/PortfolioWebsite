@@ -1,22 +1,60 @@
 import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import type { Metadata, Viewport } from "next"
+import { Analytics } from "@vercel/analytics/next"
+import { Fraunces, IBM_Plex_Mono, Inter } from "next/font/google"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+})
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+})
+
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-mono",
+  display: "swap",
+})
 
 export const metadata: Metadata = {
-  title: "Pranav Balaji - Computer Science Student & AI Engineer",
+  metadataBase: new URL("https://www.pranavbalaji.org"),
+  title: "Pranav Balaji | Software Engineer & Applied AI Builder",
   description:
-    "Personal portfolio of Pranav Balaji, Computer Science student at Purdue University specializing in AI and machine learning.",
-  keywords: "Pranav Balaji, Computer Science, AI Engineer, Machine Learning, Purdue University, Software Developer",
+    "Pranav Balaji is a Purdue Computer Engineering student building reliable software systems, AI tools, and full-stack products.",
+  keywords: [
+    "Pranav Balaji",
+    "Software Engineer",
+    "Applied AI",
+    "Computer Engineering",
+    "Purdue University",
+    "Full-stack developer",
+  ],
   authors: [{ name: "Pranav Balaji" }],
+  creator: "Pranav Balaji",
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Pranav Balaji - Computer Science Student & AI Engineer",
-    description: "Personal portfolio showcasing projects in AI, machine learning, and full-stack development.",
+    title: "Pranav Balaji | Software Engineer & Applied AI Builder",
+    description: "Reliable software systems, applied AI, and full-stack products.",
+    url: "/",
+    siteName: "Pranav Balaji",
     type: "website",
   },
-    generator: 'v0.dev'
+  twitter: {
+    card: "summary_large_image",
+    title: "Pranav Balaji | Software Engineer & Applied AI Builder",
+    description: "Reliable software systems, applied AI, and full-stack products.",
+  },
+}
+
+export const viewport: Viewport = {
+  themeColor: "#F4F0E8",
 }
 
 export default function RootLayout({
@@ -26,7 +64,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>{children}</body>
+      <body className={`${fraunces.variable} ${inter.variable} ${ibmPlexMono.variable}`}>
+        <a className="skip-link" href="#main-content">
+          Skip to content
+        </a>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
